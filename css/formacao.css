@@ -1,0 +1,161 @@
+.formacao {
+  max-width: 100%;
+  background: #2f3139;
+  position: relative;
+}
+
+.formacao-tamanho {
+  max-width: 1200px;
+  padding: 75px 140px;
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.formacao h1 {
+  font-size: 8rem;
+  display: flex;
+  justify-content: end;
+}
+
+.formacao-cursos {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
+}
+
+.curso {
+  padding: 30px 80px 20px 30px;
+  background: #b2b4bf;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  transition: 0.3s;
+}
+
+.curso:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.35));
+}
+
+.curso::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/Vector.svg") no-repeat center;
+  position: absolute;
+  left: -68px;
+  top: 40px;
+}
+
+.curso h2 {
+  max-width: 12ch;
+  min-width: 12ch;
+  color: #151720;
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.curso p {
+  color: #535962;
+  margin-left: -10px;
+  min-width: 15ch;
+}
+
+.curso-titulo {
+  margin-top: -10px;
+  flex: 1;
+}
+
+.udesc {
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+.origamid {
+  margin-top: 80px;
+  margin-bottom: -10px;
+}
+
+.idiomas {
+  margin-left: 80px;
+}
+
+.idiomas h2 {
+  font-size: 1.5rem;
+  margin-top: 130px;
+  color: #b2b4bf;
+  position: relative;
+}
+
+.idiomas h2::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/Group\ 7.svg") no-repeat center;
+  position: absolute;
+  left: -95px;
+  top: -25px;
+}
+
+.idiomas li {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #535962;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.idiomas span {
+  color: #b2b4bf;
+}
+
+@media (max-width: 1100px) {
+  .formacao-cursos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curso {
+    flex-direction: column;
+    padding: 30px 80px 20px 30px;
+    min-width: 170px;
+    max-width: 170px;
+    background: #b2b4bf;
+    border-radius: 6px;
+  }
+
+  .formacao h1 {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .idiomas {
+    margin-left: -15px;
+    justify-content: right;
+  }
+  .idiomas li {
+    font-size: 1.5rem;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .formacao h1 {
+    word-break: break-all;
+    min-width: 3ch;
+    justify-content: center;
+    text-align: right;
+  }
+}

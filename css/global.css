@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Mono", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  color: #878992;
+  background-color: #535962;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.home {
+  padding: 10px 15px;
+  position: absolute;
+  left: 25px;
+  z-index: 1;
+  transition: 0.3s;
+  margin-left: -20px;
+  margin-top: 2.5px;
+}
